@@ -1,0 +1,926 @@
+[
+  {
+    "name": "upon_entering_summoners_rift1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/4/49/Announcer_Ahri_226.ogg/revision/latest?cb=20171210114047"
+  },
+  {
+    "name": "upon_entering_summoners_rift2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/9/99/Announcer_Ahri_227.ogg/revision/latest?cb=20171210114048"
+  },
+  {
+    "name": "upon_entering_summoners_rift3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/b/bb/Announcer_Ahri_228.ogg/revision/latest?cb=20171210114050"
+  },
+  {
+    "name": "upon_entering_summoners_rift4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/b/b9/Announcer_Ahri_229.ogg/revision/latest?cb=20171210114051"
+  },
+  {
+    "name": "upon_entering_howling_abyss1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/8/85/Announcer_Ahri_224.ogg/revision/latest?cb=20171210114045"
+  },
+  {
+    "name": "upon_entering_howling_abyss2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/7/7b/Announcer_Ahri_225.ogg/revision/latest?cb=20171210114046"
+  },
+  {
+    "name": "upon_entering_twisted_treeline1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/1/1b/Announcer_Ahri_230.ogg/revision/latest?cb=20171210114052"
+  },
+  {
+    "name": "upon_entering_twisted_treeline2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/c/c2/Announcer_Ahri_231.ogg/revision/latest?cb=20171210114054"
+  },
+  {
+    "name": "upon_entering_crystal_scar1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/7/7d/Announcer_Ahri_223.ogg/revision/latest?cb=20171210114043"
+  },
+  {
+    "name": "when_ahri_is_in_the_game1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/7/7a/Announcer_Ahri_220.ogg/revision/latest?cb=20171210114039"
+  },
+  {
+    "name": "when_ahri_is_in_the_game2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/f/f3/Announcer_Ahri_221.ogg/revision/latest?cb=20171210114040"
+  },
+  {
+    "name": "when_ahri_is_in_the_game3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/e/e3/Announcer_Ahri_222.ogg/revision/latest?cb=20171210114041"
+  },
+  {
+    "name": "minions_spawning1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/d/db/Announcer_Ahri_199.ogg/revision/latest?cb=20171210113948"
+  },
+  {
+    "name": "minions_spawning2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/8/80/Announcer_Ahri_200.ogg/revision/latest?cb=20171210113924"
+  },
+  {
+    "name": "minions_spawning3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/3/3f/Announcer_Ahri_201.ogg/revision/latest?cb=20171210114015"
+  },
+  {
+    "name": "minions_spawning4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/b/b6/Announcer_Ahri_202.ogg/revision/latest?cb=20171210114017"
+  },
+  {
+    "name": "minions_spawning5",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/2/22/Announcer_Ahri_203.ogg/revision/latest?cb=20171210114018"
+  },
+  {
+    "name": "minions_spawning6",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/8/85/Announcer_Ahri_204.ogg/revision/latest?cb=20171210114020"
+  },
+  {
+    "name": "minions_spawning7",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/f/f3/Announcer_Ahri_205.ogg/revision/latest?cb=20171210114021"
+  },
+  {
+    "name": "minions_spawning8",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/b/b1/Announcer_Ahri_206.ogg/revision/latest?cb=20171210114022"
+  },
+  {
+    "name": "minions_spawning9",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/2/2c/Announcer_Ahri_207.ogg/revision/latest?cb=20171210114023"
+  },
+  {
+    "name": "minions_spawning10",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/a/a7/Announcer_Ahri_208.ogg/revision/latest?cb=20171210114024"
+  },
+  {
+    "name": "minions_spawned1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/1/10/Announcer_Ahri_185.ogg/revision/latest?cb=20171210113802"
+  },
+  {
+    "name": "minions_spawned2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/b/b4/Announcer_Ahri_186.ogg/revision/latest?cb=20171210113803"
+  },
+  {
+    "name": "minions_spawned3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/6/67/Announcer_Ahri_187.ogg/revision/latest?cb=20171210113804"
+  },
+  {
+    "name": "minions_spawned4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/7/7f/Announcer_Ahri_188.ogg/revision/latest?cb=20171210113805"
+  },
+  {
+    "name": "altars_spawning1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/7/73/Announcer_Ahri_195.ogg/revision/latest?cb=20171210113813"
+  },
+  {
+    "name": "altars_spawning2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/1/12/Announcer_Ahri_197.ogg/revision/latest?cb=20171210113816"
+  },
+  {
+    "name": "upon_first_blood1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/d/d7/Announcer_Ahri_124.ogg/revision/latest?cb=20171210113502"
+  },
+  {
+    "name": "upon_first_blood2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/5/55/Announcer_Ahri_125.ogg/revision/latest?cb=20171210113503"
+  },
+  {
+    "name": "upon_first_blood3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/5/5f/Announcer_Ahri_126.ogg/revision/latest?cb=20171210113504"
+  },
+  {
+    "name": "upon_first_blood4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/c/c6/Announcer_Ahri_127.ogg/revision/latest?cb=20171210113505"
+  },
+  {
+    "name": "on_player_kill1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/b/b3/Announcer_Ahri_051.ogg/revision/latest?cb=20171210113222"
+  },
+  {
+    "name": "on_player_kill2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/f/f5/Announcer_Ahri_052.ogg/revision/latest?cb=20171210113223"
+  },
+  {
+    "name": "on_player_kill3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/2/27/Announcer_Ahri_053.ogg/revision/latest?cb=20171210113224"
+  },
+  {
+    "name": "on_player_kill4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/c/c2/Announcer_Ahri_054.ogg/revision/latest?cb=20171210113226"
+  },
+  {
+    "name": "on_player_kill5",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/3/32/Announcer_Ahri_055.ogg/revision/latest?cb=20171210113227"
+  },
+  {
+    "name": "on_player_kill6",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/8/8f/Announcer_Ahri_056.ogg/revision/latest?cb=20171210113228"
+  },
+  {
+    "name": "on_player_kill7",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/1/1d/Announcer_Ahri_057.ogg/revision/latest?cb=20171210113229"
+  },
+  {
+    "name": "on_player_kill8",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/8/8c/Announcer_Ahri_058.ogg/revision/latest?cb=20171210113231"
+  },
+  {
+    "name": "on_player_kill9",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/8/81/Announcer_Ahri_059.ogg/revision/latest?cb=20171210113232"
+  },
+  {
+    "name": "on_player_death1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/7/7b/Announcer_Ahri_036.ogg/revision/latest?cb=20171210112638"
+  },
+  {
+    "name": "on_player_death2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/6/6f/Announcer_Ahri_037.ogg/revision/latest?cb=20171210112639"
+  },
+  {
+    "name": "on_player_death3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/2/28/Announcer_Ahri_038.ogg/revision/latest?cb=20171210112640"
+  },
+  {
+    "name": "on_player_death4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/3/39/Announcer_Ahri_039.ogg/revision/latest?cb=20171210112641"
+  },
+  {
+    "name": "on_player_death5",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/0/09/Announcer_Ahri_040.ogg/revision/latest?cb=20171210112643"
+  },
+  {
+    "name": "on_player_death6",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/9/9f/Announcer_Ahri_041.ogg/revision/latest?cb=20171210112644"
+  },
+  {
+    "name": "on_player_death7",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/d/d0/Announcer_Ahri_042.ogg/revision/latest?cb=20171210112645"
+  },
+  {
+    "name": "on_player_death8",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/1/1b/Announcer_Ahri_043.ogg/revision/latest?cb=20171210112646"
+  },
+  {
+    "name": "on_player_death9",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/7/7a/Announcer_Ahri_044.ogg/revision/latest?cb=20171210112647"
+  },
+  {
+    "name": "on_ally_kill1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/8/85/Announcer_Ahri_029.ogg/revision/latest?cb=20171210112628"
+  },
+  {
+    "name": "on_ally_kill2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/e/e0/Announcer_Ahri_030.ogg/revision/latest?cb=20171210112629"
+  },
+  {
+    "name": "on_ally_kill3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/b/be/Announcer_Ahri_031.ogg/revision/latest?cb=20171210112631"
+  },
+  {
+    "name": "on_ally_kill4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/0/09/Announcer_Ahri_032.ogg/revision/latest?cb=20171210112632"
+  },
+  {
+    "name": "on_ally_kill5",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/7/73/Announcer_Ahri_033.ogg/revision/latest?cb=20171210112633"
+  },
+  {
+    "name": "on_ally_kill6",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/2/29/Announcer_Ahri_034.ogg/revision/latest?cb=20171210112634"
+  },
+  {
+    "name": "on_ally_kill7",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/3/3b/Announcer_Ahri_035.ogg/revision/latest?cb=20171210112313"
+  },
+  {
+    "name": "on_enemy_kill1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/6/65/Announcer_Ahri_023.ogg/revision/latest?cb=20171210112615"
+  },
+  {
+    "name": "on_enemy_kill2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/d/dd/Announcer_Ahri_024.ogg/revision/latest?cb=20171210112616"
+  },
+  {
+    "name": "on_enemy_kill3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/3/33/Announcer_Ahri_025.ogg/revision/latest?cb=20171210112617"
+  },
+  {
+    "name": "on_enemy_kill4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/e/ed/Announcer_Ahri_026.ogg/revision/latest?cb=20171210112619"
+  },
+  {
+    "name": "on_enemy_kill5",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/6/6f/Announcer_Ahri_027.ogg/revision/latest?cb=20171210112620"
+  },
+  {
+    "name": "on_enemy_kill6",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/f/f3/Announcer_Ahri_028.ogg/revision/latest?cb=20171210112312"
+  },
+  {
+    "name": "upon_execution1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/1/17/Announcer_Ahri_045.ogg/revision/latest?cb=20171210112648"
+  },
+  {
+    "name": "upon_execution2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/5/5e/Announcer_Ahri_046.ogg/revision/latest?cb=20171210112650"
+  },
+  {
+    "name": "upon_execution3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/f/f2/Announcer_Ahri_047.ogg/revision/latest?cb=20171210112651"
+  },
+  {
+    "name": "upon_execution4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/e/e9/Announcer_Ahri_048.ogg/revision/latest?cb=20171210112652"
+  },
+  {
+    "name": "upon_execution5",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/f/f5/Announcer_Ahri_049.ogg/revision/latest?cb=20171210112653"
+  },
+  {
+    "name": "upon_execution6",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/d/d2/Announcer_Ahri_050.ogg/revision/latest?cb=20171210112654"
+  },
+  {
+    "name": "when_an_ace_occurs1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/c/cf/Announcer_Ahri_001.ogg/revision/latest?cb=20171210112546"
+  },
+  {
+    "name": "when_an_ace_occurs2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/0/0f/Announcer_Ahri_002.ogg/revision/latest?cb=20171210112547"
+  },
+  {
+    "name": "when_an_ace_occurs3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/c/c6/Announcer_Ahri_003.ogg/revision/latest?cb=20171210112548"
+  },
+  {
+    "name": "when_an_ace_occurs4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/d/de/Announcer_Ahri_004.ogg/revision/latest?cb=20171210112549"
+  },
+  {
+    "name": "when_an_ace_occurs5",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/c/c7/Announcer_Ahri_005.ogg/revision/latest?cb=20171210112551"
+  },
+  {
+    "name": "when_an_ace_occurs6",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/8/89/Announcer_Ahri_006.ogg/revision/latest?cb=20171210112552"
+  },
+  {
+    "name": "when_an_ace_occurs7",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/3/3c/Announcer_Ahri_007.ogg/revision/latest?cb=20171210112553"
+  },
+  {
+    "name": "when_an_ace_occurs8",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/c/c1/Announcer_Ahri_008.ogg/revision/latest?cb=20171210112554"
+  },
+  {
+    "name": "when_an_ace_occurs9",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/a/a3/Announcer_Ahri_009.ogg/revision/latest?cb=20171210112556"
+  },
+  {
+    "name": "ally_double_kill1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/5/5c/Announcer_Ahri_015.ogg/revision/latest?cb=20171210112605"
+  },
+  {
+    "name": "ally_double_kill2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/a/a7/Announcer_Ahri_016.ogg/revision/latest?cb=20171210112606"
+  },
+  {
+    "name": "ally_double_kill3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/9/9d/Announcer_Ahri_017.ogg/revision/latest?cb=20171210112608"
+  },
+  {
+    "name": "ally_double_kill4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/2/23/Announcer_Ahri_018.ogg/revision/latest?cb=20171210112609"
+  },
+  {
+    "name": "ally_double_kill5",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/c/c9/Announcer_Ahri_019.ogg/revision/latest?cb=20171210112610"
+  },
+  {
+    "name": "ally_double_kill6",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/a/a8/Announcer_Ahri_020.ogg/revision/latest?cb=20171210112612"
+  },
+  {
+    "name": "ally_double_kill7",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/8/82/Announcer_Ahri_021.ogg/revision/latest?cb=20171210112613"
+  },
+  {
+    "name": "ally_double_kill8",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/6/65/Announcer_Ahri_022.ogg/revision/latest?cb=20171210112614"
+  },
+  {
+    "name": "ally_triple_kill1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/9/95/Announcer_Ahri_091.ogg/revision/latest?cb=20171210113325"
+  },
+  {
+    "name": "ally_triple_kill2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/a/a2/Announcer_Ahri_092.ogg/revision/latest?cb=20171210113326"
+  },
+  {
+    "name": "ally_triple_kill3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/3/37/Announcer_Ahri_093.ogg/revision/latest?cb=20171210113327"
+  },
+  {
+    "name": "ally_triple_kill4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/6/69/Announcer_Ahri_094.ogg/revision/latest?cb=20171210113329"
+  },
+  {
+    "name": "ally_triple_kill5",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/7/74/Announcer_Ahri_095.ogg/revision/latest?cb=20171210113330"
+  },
+  {
+    "name": "ally_triple_kill6",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/f/fe/Announcer_Ahri_096.ogg/revision/latest?cb=20171210113331"
+  },
+  {
+    "name": "ally_quadra_kill1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/a/a1/Announcer_Ahri_080.ogg/revision/latest?cb=20171210113311"
+  },
+  {
+    "name": "ally_quadra_kill2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/5/58/Announcer_Ahri_081.ogg/revision/latest?cb=20171210113313"
+  },
+  {
+    "name": "ally_quadra_kill3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/d/da/Announcer_Ahri_082.ogg/revision/latest?cb=20171210113314"
+  },
+  {
+    "name": "ally_quadra_kill4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/6/65/Announcer_Ahri_083.ogg/revision/latest?cb=20171210113315"
+  },
+  {
+    "name": "ally_quadra_kill5",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/e/e8/Announcer_Ahri_084.ogg/revision/latest?cb=20171210113316"
+  },
+  {
+    "name": "ally_quadra_kill6",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/1/12/Announcer_Ahri_085.ogg/revision/latest?cb=20171210113318"
+  },
+  {
+    "name": "ally_pentakill1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/3/3f/Announcer_Ahri_068.ogg/revision/latest?cb=20171210113256"
+  },
+  {
+    "name": "ally_pentakill2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/5/51/Announcer_Ahri_069.ogg/revision/latest?cb=20171210113257"
+  },
+  {
+    "name": "ally_pentakill3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/a/a7/Announcer_Ahri_070.ogg/revision/latest?cb=20171210113258"
+  },
+  {
+    "name": "ally_pentakill4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/0/0c/Announcer_Ahri_071.ogg/revision/latest?cb=20171210113300"
+  },
+  {
+    "name": "ally_pentakill5",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/a/a6/Announcer_Ahri_072.ogg/revision/latest?cb=20171210113301"
+  },
+  {
+    "name": "ally_pentakill6",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/0/0a/Announcer_Ahri_073.ogg/revision/latest?cb=20171210113302"
+  },
+  {
+    "name": "ally_pentakill7",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/f/f9/Announcer_Ahri_074.ogg/revision/latest?cb=20171210113304"
+  },
+  {
+    "name": "ally_pentakill8",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/6/6f/Announcer_Ahri_075.ogg/revision/latest?cb=20171210113305"
+  },
+  {
+    "name": "enemy_double_kill1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/c/cf/Announcer_Ahri_010.ogg/revision/latest?cb=20171210112559"
+  },
+  {
+    "name": "enemy_double_kill2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/c/c0/Announcer_Ahri_011.ogg/revision/latest?cb=20171210112600"
+  },
+  {
+    "name": "enemy_double_kill3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/e/e5/Announcer_Ahri_012.ogg/revision/latest?cb=20171210112601"
+  },
+  {
+    "name": "enemy_double_kill4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/9/9a/Announcer_Ahri_013.ogg/revision/latest?cb=20171210112603"
+  },
+  {
+    "name": "enemy_double_kill5",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/1/18/Announcer_Ahri_014.ogg/revision/latest?cb=20171210112604"
+  },
+  {
+    "name": "enemy_triple_kill1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/d/dd/Announcer_Ahri_086.ogg/revision/latest?cb=20171210113319"
+  },
+  {
+    "name": "enemy_triple_kill2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/0/0a/Announcer_Ahri_087.ogg/revision/latest?cb=20171210113320"
+  },
+  {
+    "name": "enemy_triple_kill3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/3/35/Announcer_Ahri_088.ogg/revision/latest?cb=20171210113321"
+  },
+  {
+    "name": "enemy_triple_kill4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/7/71/Announcer_Ahri_089.ogg/revision/latest?cb=20171210113322"
+  },
+  {
+    "name": "enemy_triple_kill5",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/6/65/Announcer_Ahri_090.ogg/revision/latest?cb=20171210113324"
+  },
+  {
+    "name": "enemy_quadra_kill1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/6/6d/Announcer_Ahri_076.ogg/revision/latest?cb=20171210113306"
+  },
+  {
+    "name": "enemy_quadra_kill2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/2/2a/Announcer_Ahri_077.ogg/revision/latest?cb=20171210113308"
+  },
+  {
+    "name": "enemy_quadra_kill3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/e/ef/Announcer_Ahri_078.ogg/revision/latest?cb=20171210113309"
+  },
+  {
+    "name": "enemy_quadra_kill4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/6/6b/Announcer_Ahri_079.ogg/revision/latest?cb=20171210113310"
+  },
+  {
+    "name": "enemy_pentakill1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/0/04/Announcer_Ahri_060.ogg/revision/latest?cb=20171210113234"
+  },
+  {
+    "name": "enemy_pentakill2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/4/43/Announcer_Ahri_061.ogg/revision/latest?cb=20171210113235"
+  },
+  {
+    "name": "enemy_pentakill3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/1/12/Announcer_Ahri_062.ogg/revision/latest?cb=20171210113236"
+  },
+  {
+    "name": "enemy_pentakill4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/1/1e/Announcer_Ahri_063.ogg/revision/latest?cb=20171210113238"
+  },
+  {
+    "name": "enemy_pentakill5",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/d/de/Announcer_Ahri_064.ogg/revision/latest?cb=20171210113239"
+  },
+  {
+    "name": "enemy_pentakill6",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/7/73/Announcer_Ahri_065.ogg/revision/latest?cb=20171210113240"
+  },
+  {
+    "name": "enemy_pentakill7",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/2/2a/Announcer_Ahri_066.ogg/revision/latest?cb=20171210112316"
+  },
+  {
+    "name": "enemy_pentakill8",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/d/de/Announcer_Ahri_067.ogg/revision/latest?cb=20171210113255"
+  },
+  {
+    "name": "an_ally_killing_spree1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/a/a0/Announcer_Ahri_133.ogg/revision/latest?cb=20171210113512"
+  },
+  {
+    "name": "an_ally_killing_spree2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/1/1b/Announcer_Ahri_134.ogg/revision/latest?cb=20171210113513"
+  },
+  {
+    "name": "an_ally_rampage1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/0/0e/Announcer_Ahri_143.ogg/revision/latest?cb=20171210113559"
+  },
+  {
+    "name": "an_ally_rampage2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/9/9a/Announcer_Ahri_144.ogg/revision/latest?cb=20171210113600"
+  },
+  {
+    "name": "an_ally_rampage3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/5/5c/Announcer_Ahri_145.ogg/revision/latest?cb=20171210113601"
+  },
+  {
+    "name": "an_ally_is_dominating1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/9/99/Announcer_Ahri_162.ogg/revision/latest?cb=20171210113733"
+  },
+  {
+    "name": "an_ally_is_dominating2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/d/dc/Announcer_Ahri_163.ogg/revision/latest?cb=20171210113734"
+  },
+  {
+    "name": "an_ally_is_unstoppable1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/3/3e/Announcer_Ahri_154.ogg/revision/latest?cb=20171210113723"
+  },
+  {
+    "name": "an_ally_is_unstoppable2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/6/6b/Announcer_Ahri_155.ogg/revision/latest?cb=20171210113724"
+  },
+  {
+    "name": "an_ally_is_godlike1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/4/4b/Announcer_Ahri_170.ogg/revision/latest?cb=20171210113743"
+  },
+  {
+    "name": "an_ally_is_godlike2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/7/7c/Announcer_Ahri_171.ogg/revision/latest?cb=20171210113744"
+  },
+  {
+    "name": "an_ally_is_legendary1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/3/32/Announcer_Ahri_101.ogg/revision/latest?cb=20171210113433"
+  },
+  {
+    "name": "an_ally_is_legendary2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/f/f9/Announcer_Ahri_102.ogg/revision/latest?cb=20171210113434"
+  },
+  {
+    "name": "an_ally_is_legendary3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/b/b5/Announcer_Ahri_103.ogg/revision/latest?cb=20171210113436"
+  },
+  {
+    "name": "an_enemy_killing_spree1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/4/41/Announcer_Ahri_135.ogg/revision/latest?cb=20171210113514"
+  },
+  {
+    "name": "an_enemy_killing_spree2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/3/35/Announcer_Ahri_136.ogg/revision/latest?cb=20171210113516"
+  },
+  {
+    "name": "an_enemy_killing_spree3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/0/03/Announcer_Ahri_137.ogg/revision/latest?cb=20171210113517"
+  },
+  {
+    "name": "an_enemy_killing_spree4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/a/a5/Announcer_Ahri_138.ogg/revision/latest?cb=20171210112317"
+  },
+  {
+    "name": "an_enemy_rampage1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/4/47/Announcer_Ahri_146.ogg/revision/latest?cb=20171210113603"
+  },
+  {
+    "name": "an_enemy_rampage2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/b/b5/Announcer_Ahri_147.ogg/revision/latest?cb=20171210113604"
+  },
+  {
+    "name": "an_enemy_rampage3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/7/74/Announcer_Ahri_148.ogg/revision/latest?cb=20171210113605"
+  },
+  {
+    "name": "an_enemy_rampage4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/e/e2/Announcer_Ahri_149.ogg/revision/latest?cb=20171210113606"
+  },
+  {
+    "name": "an_enemy_is_dominating1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/d/d3/Announcer_Ahri_164.ogg/revision/latest?cb=20171210113736"
+  },
+  {
+    "name": "an_enemy_is_dominating2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/b/b4/Announcer_Ahri_165.ogg/revision/latest?cb=20171210113737"
+  },
+  {
+    "name": "an_enemy_is_unstoppable1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/d/d0/Announcer_Ahri_156.ogg/revision/latest?cb=20171210113725"
+  },
+  {
+    "name": "an_enemy_is_unstoppable2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/8/87/Announcer_Ahri_157.ogg/revision/latest?cb=20171210113727"
+  },
+  {
+    "name": "an_enemy_is_godlike1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/0/0a/Announcer_Ahri_172.ogg/revision/latest?cb=20171210113745"
+  },
+  {
+    "name": "an_enemy_is_godlike2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/2/29/Announcer_Ahri_173.ogg/revision/latest?cb=20171210113747"
+  },
+  {
+    "name": "an_enemy_is_legendary1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/8/85/Announcer_Ahri_178.ogg/revision/latest?cb=20171210113752"
+  },
+  {
+    "name": "an_enemy_is_legendary2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/5/59/Announcer_Ahri_179.ogg/revision/latest?cb=20171210113754"
+  },
+  {
+    "name": "an_enemy_is_legendary3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/f/f2/Announcer_Ahri_180.ogg/revision/latest?cb=20171210113755"
+  },
+  {
+    "name": "upon_shut_down1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/6/6e/Announcer_Ahri_128.ogg/revision/latest?cb=20171210113506"
+  },
+  {
+    "name": "upon_shut_down2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/9/96/Announcer_Ahri_129.ogg/revision/latest?cb=20171210113507"
+  },
+  {
+    "name": "upon_shut_down3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/3/34/Announcer_Ahri_130.ogg/revision/latest?cb=20171210113508"
+  },
+  {
+    "name": "upon_shut_down4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/8/80/Announcer_Ahri_131.ogg/revision/latest?cb=20171210113510"
+  },
+  {
+    "name": "upon_shut_down5",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/b/b8/Announcer_Ahri_132.ogg/revision/latest?cb=20171210113511"
+  },
+  {
+    "name": "upon_an_allied_turret_being_destroyed1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/c/c5/Announcer_Ahri_212.ogg/revision/latest?cb=20171210114029"
+  },
+  {
+    "name": "upon_an_allied_turret_being_destroyed2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/a/a4/Announcer_Ahri_213.ogg/revision/latest?cb=20171210114030"
+  },
+  {
+    "name": "upon_an_allied_turret_being_destroyed3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/8/8b/Announcer_Ahri_214.ogg/revision/latest?cb=20171210114031"
+  },
+  {
+    "name": "upon_an_enemy_turret_being_destroyed1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/b/b0/Announcer_Ahri_209.ogg/revision/latest?cb=20171210114025"
+  },
+  {
+    "name": "upon_an_enemy_turret_being_destroyed2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/2/23/Announcer_Ahri_210.ogg/revision/latest?cb=20171210114027"
+  },
+  {
+    "name": "upon_an_enemy_turret_being_destroyed3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/5/55/Announcer_Ahri_211.ogg/revision/latest?cb=20171210114028"
+  },
+  {
+    "name": "upon_allied_inhibitor_being_destroyed1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/e/ea/Announcer_Ahri_107.ogg/revision/latest?cb=20171210113441"
+  },
+  {
+    "name": "upon_allied_inhibitor_being_destroyed2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/6/6b/Announcer_Ahri_108.ogg/revision/latest?cb=20171210113442"
+  },
+  {
+    "name": "upon_allied_inhibitor_being_destroyed3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/4/47/Announcer_Ahri_109.ogg/revision/latest?cb=20171210113443"
+  },
+  {
+    "name": "upon_allied_inhibitor_being_destroyed4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/d/df/Announcer_Ahri_110.ogg/revision/latest?cb=20171210113444"
+  },
+  {
+    "name": "upon_enemy_inhibitor_being_destroyed1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/7/7e/Announcer_Ahri_104.ogg/revision/latest?cb=20171210113437"
+  },
+  {
+    "name": "upon_enemy_inhibitor_being_destroyed2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/5/50/Announcer_Ahri_105.ogg/revision/latest?cb=20171210113438"
+  },
+  {
+    "name": "upon_enemy_inhibitor_being_destroyed3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/1/1b/Announcer_Ahri_106.ogg/revision/latest?cb=20171210113440"
+  },
+  {
+    "name": "upon_allied_inhibitor_respawning_soon1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/b/b8/Announcer_Ahri_115.ogg/revision/latest?cb=20171210113450"
+  },
+  {
+    "name": "upon_allied_inhibitor_respawning_soon2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/e/e7/Announcer_Ahri_116.ogg/revision/latest?cb=20171210113452"
+  },
+  {
+    "name": "upon_enemy_inhibitor_respawning_soon1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/1/1d/Announcer_Ahri_113.ogg/revision/latest?cb=20171210113448"
+  },
+  {
+    "name": "upon_enemy_inhibitor_respawning_soon2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/5/5e/Announcer_Ahri_114.ogg/revision/latest?cb=20171210113449"
+  },
+  {
+    "name": "upon_victory1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/3/3e/Announcer_Ahri_215.ogg/revision/latest?cb=20171210114033"
+  },
+  {
+    "name": "upon_victory2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/0/0c/Announcer_Ahri_216.ogg/revision/latest?cb=20171210114034"
+  },
+  {
+    "name": "upon_victory3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/a/a7/Announcer_Ahri_217.ogg/revision/latest?cb=20171210114035"
+  },
+  {
+    "name": "upon_victory4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/8/89/Announcer_Ahri_218.ogg/revision/latest?cb=20171210114037"
+  },
+  {
+    "name": "upon_victory5",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/1/15/Announcer_Ahri_219.ogg/revision/latest?cb=20171210114038"
+  },
+  {
+    "name": "upon_defeat1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/e/e5/Announcer_Ahri_119.ogg/revision/latest?cb=20171210113455"
+  },
+  {
+    "name": "upon_defeat2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/f/fc/Announcer_Ahri_120.ogg/revision/latest?cb=20171210113456"
+  },
+  {
+    "name": "upon_defeat3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/3/33/Announcer_Ahri_121.ogg/revision/latest?cb=20171210113458"
+  },
+  {
+    "name": "upon_defeat4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/d/d4/Announcer_Ahri_122.ogg/revision/latest?cb=20171210113459"
+  },
+  {
+    "name": "upon_defeat5",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/b/b2/Announcer_Ahri_123.ogg/revision/latest?cb=20171210113500"
+  },
+  {
+    "name": "upon_player_disconnection1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/8/8d/Announcer_Ahri_193.ogg/revision/latest?cb=20171210113811"
+  },
+  {
+    "name": "upon_player_reconnection1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/e/eb/Announcer_Ahri_194.ogg/revision/latest?cb=20171210113812"
+  },
+  {
+    "name": "the_player_goes_on_a_killing_spree1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/8/81/Announcer_Ahri_139.ogg/revision/latest?cb=20171210113554"
+  },
+  {
+    "name": "the_player_goes_on_a_killing_spree2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/f/f6/Announcer_Ahri_140.ogg/revision/latest?cb=20171210113555"
+  },
+  {
+    "name": "the_player_goes_on_a_killing_spree3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/7/73/Announcer_Ahri_141.ogg/revision/latest?cb=20171210113556"
+  },
+  {
+    "name": "the_player_goes_on_a_killing_spree4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/1/13/Announcer_Ahri_142.ogg/revision/latest?cb=20171210113558"
+  },
+  {
+    "name": "the_player_goes_on_a_rampage1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/7/7c/Announcer_Ahri_150.ogg/revision/latest?cb=20171210113607"
+  },
+  {
+    "name": "the_player_goes_on_a_rampage2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/e/ec/Announcer_Ahri_151.ogg/revision/latest?cb=20171210113719"
+  },
+  {
+    "name": "the_player_goes_on_a_rampage3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/1/11/Announcer_Ahri_152.ogg/revision/latest?cb=20171210113721"
+  },
+  {
+    "name": "the_player_goes_on_a_rampage4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/f/f2/Announcer_Ahri_153.ogg/revision/latest?cb=20171210113722"
+  },
+  {
+    "name": "the_player_is_dominating1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/3/32/Announcer_Ahri_166.ogg/revision/latest?cb=20171210113738"
+  },
+  {
+    "name": "the_player_is_dominating2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/5/56/Announcer_Ahri_167.ogg/revision/latest?cb=20171210113739"
+  },
+  {
+    "name": "the_player_is_dominating3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/f/f9/Announcer_Ahri_168.ogg/revision/latest?cb=20171210113740"
+  },
+  {
+    "name": "the_player_is_dominating4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/8/8a/Announcer_Ahri_169.ogg/revision/latest?cb=20171210113742"
+  },
+  {
+    "name": "the_player_is_unstoppable1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/d/de/Announcer_Ahri_158.ogg/revision/latest?cb=20171210113728"
+  },
+  {
+    "name": "the_player_is_unstoppable2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/7/72/Announcer_Ahri_159.ogg/revision/latest?cb=20171210113729"
+  },
+  {
+    "name": "the_player_is_unstoppable3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/f/fe/Announcer_Ahri_160.ogg/revision/latest?cb=20171210113731"
+  },
+  {
+    "name": "the_player_is_unstoppable4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/c/c7/Announcer_Ahri_161.ogg/revision/latest?cb=20171210113732"
+  },
+  {
+    "name": "the_player_is_godlike1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/f/f5/Announcer_Ahri_174.ogg/revision/latest?cb=20171210113748"
+  },
+  {
+    "name": "the_player_is_godlike2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/9/93/Announcer_Ahri_175.ogg/revision/latest?cb=20171210113749"
+  },
+  {
+    "name": "the_player_is_godlike3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/f/f7/Announcer_Ahri_176.ogg/revision/latest?cb=20171210113750"
+  },
+  {
+    "name": "the_player_is_godlike4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/a/af/Announcer_Ahri_177.ogg/revision/latest?cb=20171210113751"
+  },
+  {
+    "name": "the_player_is_legendary1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/1/18/Announcer_Ahri_181.ogg/revision/latest?cb=20171210113756"
+  },
+  {
+    "name": "the_player_is_legendary2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/8/80/Announcer_Ahri_182.ogg/revision/latest?cb=20171210113757"
+  },
+  {
+    "name": "the_player_is_legendary3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/6/6e/Announcer_Ahri_183.ogg/revision/latest?cb=20171210113759"
+  },
+  {
+    "name": "the_player_is_legendary4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/8/8e/Announcer_Ahri_184.ogg/revision/latest?cb=20171210113800"
+  },
+  {
+    "name": "legendary_kills1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/c/c2/Announcer_Ahri_097.ogg/revision/latest?cb=20171210113332"
+  },
+  {
+    "name": "legendary_kills2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/e/e2/Announcer_Ahri_098.ogg/revision/latest?cb=20171210113333"
+  },
+  {
+    "name": "legendary_kills3",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/d/da/Announcer_Ahri_099.ogg/revision/latest?cb=20171210113335"
+  },
+  {
+    "name": "legendary_kills4",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/9/97/Announcer_Ahri_100.ogg/revision/latest?cb=20171210113336"
+  },
+  {
+    "name": "when_your_nexus_is_under_attack1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/2/21/Announcer_Ahri_189.ogg/revision/latest?cb=20171210113806"
+  },
+  {
+    "name": "when_your_nexus_is_under_attack2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/1/1a/Announcer_Ahri_190.ogg/revision/latest?cb=20171210113807"
+  },
+  {
+    "name": "upon_surrendering1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/d/da/Announcer_Ahri_191.ogg/revision/latest?cb=20171210113808"
+  },
+  {
+    "name": "upon_surrendering2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/9/96/Announcer_Ahri_192.ogg/revision/latest?cb=20171210113810"
+  },
+  {
+    "name": "upon_allied_inhibitor_respawning1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/b/b4/Announcer_Ahri_117.ogg/revision/latest?cb=20171210113453"
+  },
+  {
+    "name": "upon_allied_inhibitor_respawning2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/d/dd/Announcer_Ahri_118.ogg/revision/latest?cb=20171210113454"
+  },
+  {
+    "name": "upon_enemy_inhibitor_respawning1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/9/90/Announcer_Ahri_111.ogg/revision/latest?cb=20171210113445"
+  },
+  {
+    "name": "upon_enemy_inhibitor_respawning2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/c/c9/Announcer_Ahri_112.ogg/revision/latest?cb=20171210113447"
+  },
+  {
+    "name": "battle_beginning1",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/a/a8/Announcer_Ahri_196.ogg/revision/latest?cb=20171210113815"
+  },
+  {
+    "name": "battle_beginning2",
+    "content": "https://static.wikia.nocookie.net/leagueoflegends/images/7/77/Announcer_Ahri_198.ogg/revision/latest?cb=20171210113817"
+  }
+]

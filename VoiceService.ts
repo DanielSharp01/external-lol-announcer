@@ -1,5 +1,8 @@
 import playSound from 'play-sound';
+import { Logger } from 'tslog';
 import { VoiceLineCollection } from './voiceLines';
+
+const log: Logger = new Logger({ name: "VoiceService", displayInstanceName: false, displayFilePath: 'hidden', displayFunctionName: false });
 
 const player = playSound({});
 const pickRandom = (arr) => {
@@ -16,6 +19,7 @@ export class VoiceService {
 
     async queueOgg(voiceLines: VoiceLineCollection) {
         const picked = pickRandom(voiceLines);
+        log.debug('Voiceline picked', picked);
         this._canQueue = false;
         await playOgg(picked);
         return this._canQueue = true;

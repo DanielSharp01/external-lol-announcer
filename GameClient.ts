@@ -1,7 +1,10 @@
 import { BehaviorSubject, Observable } from 'rxjs';
 import { Player } from './Player';
-import { GameEvent, MappedEvent, FirstBloodEvent, AceEvent, KillType, KillEvent } from './Events';
+import { GameEvent, MappedEvent, FirstBloodEvent, AceEvent, KillType, KillEvent, MultiKillEvent } from './Events';
 import fetch from 'node-fetch';
+import { Logger } from 'tslog';
+
+const log: Logger = new Logger({ name: "GameClient", displayInstanceName: false, displayFilePath: 'hidden', displayFunctionName: false });
 
 const delayPromise = ms => new Promise<void>(resolve => setTimeout(() => resolve(), ms))
 export class GameClient {
@@ -12,6 +15,7 @@ export class GameClient {
     private lastEventId: number;
 
     async run() {
+        log.info('Waiting for game');
         while (true) {
             // Wait for the game
             while (!(this._players?.[0]?.summonerName)) {
@@ -26,31 +30,39 @@ export class GameClient {
             }
 
             // Game found
-            const activeSummName = await this.fetchActiveSummonerName();
-            this._localPlayer = this.players.find(p => p.summonerName == activeSummName);
-            this._mapName = await this.fetchMapName();
-            this.lastEventId = -1;
-            await this.requestEvents(false);
-            while (true) {
-                try {
-                    const events = await this.requestEvents(true);
-                    if (events.length > 0) {
-                        this.eventQueue.next([...this.eventQueue.value, ...events])
+            try {
+                const activeSummName = await this.fetchActiveSummonerName();
+                this._localPlayer = this.players.find(p => p.summonerName == activeSummName);
+                const { team, summonerName, championName } = this._localPlayer
+                log.info('Game found with', { team, summonerName, championName });
+                this._mapName = await this.fetchMapName();
+                this.lastEventId = -1;
+                await this.requestEvents(false);
+                while (true) {
+                    try {
+                        const events = await this.requestEvents(true);
+                        if (events.length > 0) {
+                            this.eventQueue.next([...this.eventQueue.value, ...events])
+                        }
                     }
-                }
-                catch (err) {
-                    break;
-                }
+                    catch (err) {
+                        log.info('Game aborted due to exception', err);
+                        break;
+                    }
 
-                this.eventQueue.next(this.eventQueue.value);
-                await delayPromise(100);
+                    this.eventQueue.next(this.eventQueue.value);
+                    await delayPromise(50);
+                }
+            } catch (err) {
+                log.info('Game aborted due to exception', err);
             }
+            log.info('Waiting for game');
         }
     }
 
-    // TODO: Should be tested
     async requestEvents(addToUnprocessed: boolean): Promise<Array<MappedEvent>> {
         const events = (await this.fetchEvents(this.lastEventId)).Events;
+        if (events.length > 0) log.debug('Processing', events);
         const mappedEvents: Array<MappedEvent> = [];
         const resolveKillType = (killer: Player, victim: Player): KillType => {
             return !killer ? 'executed' : killer?.summonerName === this.localPlayerName
@@ -65,11 +77,23 @@ export class GameClient {
                         const welcomeTime = this._mapName === 'Map12' ? 30 : 25;
                         const minionSpawnTime = 35;
                         setTimeout(() => {
-                            mappedEvents.push({ EventName: 'Welcome', EventTime: welcomeTime, isHA: this._mapName === 'Map12', hasAhri: this._players.some(p => p.championName === 'Ahri') });
+                            this.eventQueue.next([...this.eventQueue.value,
+                            {
+                                EventName: 'Welcome',
+                                EventTime: welcomeTime,
+                                isHA: this._mapName === 'Map12',
+                                hasAhri: this._players.some(p => p.championName === 'Ahri'),
+                            }]);
+                            mappedEvents.push();
                         }, welcomeTime * 1000);
                         if (this._mapName !== 'Map12') {
                             setTimeout(() => {
-                                mappedEvents.push({ EventName: 'MinionsWillSpawn', EventTime: minionSpawnTime });
+                                log.debug('Should setup minion timer');
+                                this.eventQueue.next([...this.eventQueue.value,
+                                {
+                                    EventName: 'MinionsWillSpawn',
+                                    EventTime: minionSpawnTime
+                                }]);
                             }, minionSpawnTime * 1000);
                         }
                     }
@@ -100,10 +124,11 @@ export class GameClient {
                         } else {
                             if (addToUnprocessed) {
                                 const existingIdx = mappedEvents.findIndex(ue => ue.EventName === 'ChampionKill' && ue.KillerName === killerName);
+                                const mappedMultiKillEvent = { ...mappedKillEvent, MultikillStreak: (events[idx + 1] as MultiKillEvent).KillStreak };
                                 if (existingIdx >= 0) {
-                                    mappedEvents.splice(existingIdx, 1, mappedKillEvent);
+                                    mappedEvents.splice(existingIdx, 1, mappedMultiKillEvent);
                                 } else {
-                                    mappedEvents.push(mappedKillEvent);
+                                    mappedEvents.push(mappedMultiKillEvent);
                                 }
 
                                 if (idx < events.length - 2 && events[idx + 2].EventName === 'Ace') {

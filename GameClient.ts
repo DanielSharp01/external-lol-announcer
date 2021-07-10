@@ -56,6 +56,7 @@ export class GameClient {
             } catch (err) {
                 log.info('Game aborted due to exception', err);
             }
+            this._players = null;
             log.info('Waiting for game');
         }
     }
@@ -84,7 +85,6 @@ export class GameClient {
                                 isHA: this._mapName === 'Map12',
                                 hasAhri: this._players.some(p => p.championName === 'Ahri'),
                             }]);
-                            mappedEvents.push();
                         }, welcomeTime * 1000);
                         if (this._mapName !== 'Map12') {
                             setTimeout(() => {
@@ -140,15 +140,15 @@ export class GameClient {
                     if (killer) victim.killingSpree = 0;
                 } else if (e.EventName === 'TurretKilled') {
                     if (addToUnprocessed) mappedEvents.push(
-                        { EventTime: e.EventTime, EventName: e.EventName, Ally: e.TurretKilled.startsWith(this.structurePrefix) },
+                        { EventTime: e.EventTime, EventName: e.EventName, Ally: e.TurretKilled.startsWith(this.turretPrefix) },
                     );
                 } else if (e.EventName === 'InhibKilled') {
                     if (addToUnprocessed) mappedEvents.push(
-                        { EventTime: e.EventTime, EventName: e.EventName, Ally: e.InhibKilled.startsWith(this.structurePrefix) },
+                        { EventTime: e.EventTime, EventName: e.EventName, Ally: e.InhibKilled.startsWith(this.inhibPrefix) },
                     );
                 } else if (e.EventName === 'InhibRespawningSoon') {
                     if (addToUnprocessed) mappedEvents.push(
-                        { EventTime: e.EventTime, EventName: e.EventName, Ally: e.InhibRespawningSoon.startsWith(this.structurePrefix) },
+                        { EventTime: e.EventTime, EventName: e.EventName, Ally: e.InhibRespawningSoon.startsWith(this.inhibPrefix) },
                     );
                 } else if (e.EventName === 'MinionsSpawning') {
                     if (addToUnprocessed) mappedEvents.push(e);
@@ -185,6 +185,14 @@ export class GameClient {
 
     get structurePrefix() {
         return this._localPlayer.team === 'ORDER' ? 'T1' : 'T2';
+    }
+
+    get turretPrefix() {
+        return `Turret_${this.structurePrefix}`;
+    }
+
+    get inhibPrefix() {
+        return `Barracks_${this.structurePrefix}`;
     }
 
     get mapName() {

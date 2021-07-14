@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node .src/index.ts",
+    "start": "ts-node ./src/index.ts",
     "test": "jest",
-    "download-ogg": "ts-node audio-download/index.js"
+    "download-ogg": "ts-node audio-download/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -25,5 +25,8 @@
     "@types/jest": "^26.0.24",
     "@types/node": "^15.14.0",
     "ts-jest": "^27.0.3"
+  },
+  "bin": {
+    "external-announcer": "./run.sh"
   }
 }

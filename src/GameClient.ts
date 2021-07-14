@@ -88,7 +88,6 @@ export class GameClient {
                         }, welcomeTime * 1000);
                         if (this._mapName !== 'Map12') {
                             setTimeout(() => {
-                                log.debug('Should setup minion timer');
                                 this.eventQueue.next([...this.eventQueue.value,
                                 {
                                     EventName: 'MinionsWillSpawn',

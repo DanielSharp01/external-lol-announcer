@@ -1,6 +1,6 @@
-const fs = require("fs");
-const path = require("path");
-const https = require("https");
+import fs from 'fs';
+import path from 'path';
+import https from 'https';
 
 function downloadOgg(source) {
     const file = fs.createWriteStream(path.join(__dirname, `ogg/${source.name}.ogg`));
@@ -10,6 +10,6 @@ function downloadOgg(source) {
     });
 }
 
-JSON.parse(fs.readFileSync('audio.json')).forEach(source => {
+JSON.parse(fs.readFileSync('audio.json', 'utf-8')).forEach(source => {
     downloadOgg(source)
 });;

@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node ./index.ts",
+    "start": "ts-node .src/index.ts",
     "test": "jest",
-    "download-ogg": "node download-audio.js"
+    "download-ogg": "ts-node audio-download/index.js"
   },
   "keywords": [],
   "author": "",

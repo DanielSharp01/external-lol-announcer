@@ -4,7 +4,7 @@ import { GameEvent, MappedEvent, FirstBloodEvent, AceEvent, KillType, KillEvent,
 import fetch from 'node-fetch';
 import { Logger } from 'tslog';
 
-const log: Logger = new Logger({ name: "GameClient", displayInstanceName: false, displayFilePath: 'hidden', displayFunctionName: false });
+const log: Logger = new Logger({ name: "GameClient", suppressStdOutput: true, displayInstanceName: false, displayFilePath: 'hidden', displayFunctionName: false });
 
 const delayPromise = ms => new Promise<void>(resolve => setTimeout(() => resolve(), ms))
 export class GameClient {
@@ -37,13 +37,10 @@ export class GameClient {
                 log.info('Game found with', { team, summonerName, championName });
                 this._mapName = await this.fetchMapName();
                 this.lastEventId = -1;
-                await this.requestEvents(false);
+                this.mapAndDispatchEvents(await this.fetchEvents(), false);
                 while (true) {
                     try {
-                        const events = await this.requestEvents(true);
-                        if (events.length > 0) {
-                            this.eventQueue.next([...this.eventQueue.value, ...events])
-                        }
+                        this.mapAndDispatchEvents(await this.fetchEvents(), true);
                     }
                     catch (err) {
                         log.info('Game aborted due to exception', err);
@@ -61,8 +58,7 @@ export class GameClient {
         }
     }
 
-    async requestEvents(addToUnprocessed: boolean): Promise<Array<MappedEvent>> {
-        const events = (await this.fetchEvents(this.lastEventId)).Events;
+    mapAndDispatchEvents(events: Array<GameEvent>, dispatch: boolean): void {
         if (events.length > 0) log.debug('Processing', events);
         const mappedEvents: Array<MappedEvent> = [];
         const resolveKillType = (killer: Player, victim: Player): KillType => {
@@ -74,7 +70,7 @@ export class GameClient {
         if (events.length > 0) {
             events.forEach((e, idx) => {
                 if (e.EventName === 'GameStart') {
-                    if (events.length === 1 || addToUnprocessed) {
+                    if (events.length === 1 || dispatch) {
                         const welcomeTime = this._mapName === 'Map12' ? 30 : 25;
                         const minionSpawnTime = 35;
                         setTimeout(() => {
@@ -110,7 +106,7 @@ export class GameClient {
                         Shutdown: killer && victim.killingSpree >= 2,
                         Type: resolveKillType(killer, victim),
                     };
-                    if (addToUnprocessed) {
+                    if (dispatch) {
                         if (idx < events.length - 1 && events[idx + 1].EventName === 'FirstBlood') {
                             mappedEvents.push(events[idx + 1] as FirstBloodEvent);
                         } else if (idx < events.length - 1 && events[idx + 1].EventName === 'Ace') {
@@ -121,7 +117,7 @@ export class GameClient {
                         } else if (idx >= events.length - 1 || events[idx + 1].EventName !== 'Multikill') {
                             mappedEvents.push(mappedKillEvent);
                         } else {
-                            if (addToUnprocessed) {
+                            if (dispatch) {
                                 const existingIdx = mappedEvents.findIndex(ue => ue.EventName === 'ChampionKill' && ue.KillerName === killerName);
                                 const mappedMultiKillEvent = { ...mappedKillEvent, MultikillStreak: (events[idx + 1] as MultiKillEvent).KillStreak };
                                 if (existingIdx >= 0) {
@@ -138,28 +134,28 @@ export class GameClient {
                     }
                     if (killer) victim.killingSpree = 0;
                 } else if (e.EventName === 'TurretKilled') {
-                    if (addToUnprocessed) mappedEvents.push(
+                    if (dispatch) mappedEvents.push(
                         { EventTime: e.EventTime, EventName: e.EventName, Ally: e.TurretKilled.startsWith(this.turretPrefix) },
                     );
                 } else if (e.EventName === 'InhibKilled') {
-                    if (addToUnprocessed) mappedEvents.push(
+                    if (dispatch) mappedEvents.push(
                         { EventTime: e.EventTime, EventName: e.EventName, Ally: e.InhibKilled.startsWith(this.inhibPrefix) },
                     );
                 } else if (e.EventName === 'InhibRespawningSoon') {
-                    if (addToUnprocessed) mappedEvents.push(
+                    if (dispatch) mappedEvents.push(
                         { EventTime: e.EventTime, EventName: e.EventName, Ally: e.InhibRespawningSoon.startsWith(this.inhibPrefix) },
                     );
                 } else if (e.EventName === 'MinionsSpawning') {
-                    if (addToUnprocessed) mappedEvents.push(e);
+                    if (dispatch) mappedEvents.push(e);
                 } else if (e.EventName === 'GameEnd') {
-                    if (addToUnprocessed) mappedEvents.push(e);
+                    if (dispatch) mappedEvents.push(e);
                 }
             })
-
-            this.lastEventId = events[events.length - 1].EventID;
         }
 
-        return mappedEvents;
+        if (mappedEvents.length > 0) {
+            this.eventQueue.next([...this.eventQueue.value, ...mappedEvents])
+        }
     }
 
     observeEventQueue(): Observable<Array<MappedEvent>> {
@@ -210,7 +206,11 @@ export class GameClient {
         return fetch('https://127.0.0.1:2999/liveclientdata/gamestats', {}).then(res => res.json()).then(res => res.mapName);
     }
 
-    async fetchEvents(lastEventId: number): Promise<{ Events: Array<GameEvent> }> {
-        return fetch(`https://127.0.0.1:2999/liveclientdata/eventdata?eventID=${lastEventId + 1}`, {}).then(res => res.json());
+    async fetchEvents(): Promise<Array<GameEvent>> {
+        return fetch(`https://127.0.0.1:2999/liveclientdata/eventdata?eventID=${this.lastEventId + 1}`, {})
+            .then(res => res.json()).then(res => res.Events).then((res: Array<GameEvent>) => {
+                if (res.length > 0) this.lastEventId = res[res.length - 1].EventID;
+                return res;
+            });
     }
 }

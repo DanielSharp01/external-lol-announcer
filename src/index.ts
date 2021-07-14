@@ -21,6 +21,8 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
 console.log(chalk.bold.blueBright(`External LoL Announcer v${version}`));
 
+// TODO: Make the logging be disableable both with flags and for tests
+
 const log: Logger = new Logger({ name: "Main", displayInstanceName: false, displayFilePath: 'hidden', displayFunctionName: false });
 
 const voiceService = new VoiceService();

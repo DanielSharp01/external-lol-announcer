@@ -2,9 +2,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { Player } from './Player';
 import { GameEvent, MappedEvent, FirstBloodEvent, AceEvent, KillType, KillEvent, MultiKillEvent } from './Events';
 import fetch from 'node-fetch';
-import { Logger } from 'tslog';
-
-const log: Logger = new Logger({ name: "GameClient", suppressStdOutput: true, displayInstanceName: false, displayFilePath: 'hidden', displayFunctionName: false });
+import { mainLogger, gameEventLogger } from './Loggers';
 
 const delayPromise = ms => new Promise<void>(resolve => setTimeout(() => resolve(), ms))
 export class GameClient {
@@ -15,7 +13,7 @@ export class GameClient {
     private lastEventId: number;
 
     async run() {
-        log.info('Waiting for game');
+        mainLogger.info('Waiting for game');
         while (true) {
             // Wait for the game
             while (!(this._players?.[0]?.summonerName)) {
@@ -34,7 +32,7 @@ export class GameClient {
                 const activeSummName = await this.fetchActiveSummonerName();
                 this._localPlayer = this.players.find(p => p.summonerName == activeSummName);
                 const { team, summonerName, championName } = this._localPlayer
-                log.info('Game found with', { team, summonerName, championName });
+                mainLogger.info('Game found with', { team, summonerName, championName });
                 this._mapName = await this.fetchMapName();
                 this.lastEventId = -1;
                 this.mapAndDispatchEvents(await this.fetchEvents(), false);
@@ -43,7 +41,7 @@ export class GameClient {
                         this.mapAndDispatchEvents(await this.fetchEvents(), true);
                     }
                     catch (err) {
-                        log.info('Game aborted due to exception', err);
+                        mainLogger.debug('Game aborted due to exception', err);
                         break;
                     }
 
@@ -51,15 +49,15 @@ export class GameClient {
                     await delayPromise(50);
                 }
             } catch (err) {
-                log.info('Game aborted due to exception', err);
+                mainLogger.debug('Game aborted due to exception', err);
             }
             this._players = null;
-            log.info('Waiting for game');
+            mainLogger.info('Waiting for game');
         }
     }
 
     mapAndDispatchEvents(events: Array<GameEvent>, dispatch: boolean): void {
-        if (events.length > 0) log.debug('Processing', events);
+        if (events.length > 0) gameEventLogger.debug(events);
         const mappedEvents: Array<MappedEvent> = [];
         const resolveKillType = (killer: Player, victim: Player): KillType => {
             return !killer ? 'executed' : killer?.summonerName === this.localPlayerName

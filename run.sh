@@ -1,1 +1,1 @@
-ts-node ./src/index.ts
+ts-node ./src/index.ts "$@"

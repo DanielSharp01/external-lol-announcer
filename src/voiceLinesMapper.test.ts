@@ -1,7 +1,12 @@
 import { getNextAnnoucementEvent, getVoiceLineFromEvent } from './voiceLineMapper';
 import * as voiceLines from './voiceLines';
+import { mainLogger } from './Loggers';
 
 describe("getNextAnnoucementEvent should return right priority", () => {
+    beforeAll(() => {
+        mainLogger.setSettings({ suppressStdOutput: true });
+    });
+
     test("Time matters", () => {
         expect(getNextAnnoucementEvent([
             { EventID: 0, EventTime: 0.15, EventName: 'Ace', AcerName: 'Someone' },
@@ -178,6 +183,10 @@ describe("getVoiceLineFromEvent should return the right voice line", () => {
 });
 
 describe('getVoiceLineFromEvent should deal with ChampionKills', () => {
+    beforeAll(() => {
+        mainLogger.setSettings({ suppressStdOutput: true });
+    });
+
     test("localKill", () => {
         expect(getVoiceLineFromEvent({
             EventTime: 0,

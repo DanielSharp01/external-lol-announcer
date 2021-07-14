@@ -2,6 +2,7 @@
 import { GameEvent, MappedEvent } from './Events';
 import { GameClient } from './GameClient';
 import { Player } from './Player';
+import { mainLogger } from './Loggers';
 
 describe("mapAndDispatchEvents should map the right events", () => {
     let gameClient = new GameClient();
@@ -11,6 +12,7 @@ describe("mapAndDispatchEvents should map the right events", () => {
     let enemy1: Player & { killingSpree: number };
     beforeAll(() => {
         jest.useFakeTimers();
+        mainLogger.setSettings({ suppressStdOutput: true });
     });
 
     beforeEach(() => {

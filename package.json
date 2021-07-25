@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node ./src/index.ts --debug",
+    "build": "tsc",
     "test": "jest",
     "download-ogg": "ts-node audio-download/index.ts"
   },
@@ -28,6 +29,6 @@
     "ts-jest": "^27.0.3"
   },
   "bin": {
-    "external-announcer": "./run.sh"
+    "external-announcer": "./dist/src/index.js"
   }
 }

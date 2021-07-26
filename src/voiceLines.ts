@@ -1,9 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-
-const oggDir = __dirname.includes('dist') ? path.join(__dirname, '../../', './ogg') : path.join(__dirname, '../', './ogg');
-const oggList = fs.readdirSync(oggDir);
+const oggList = fs.readdirSync(path.join(__dirname, '../ogg'));
 
 export type VoiceLineCollection = Array<string>;
 

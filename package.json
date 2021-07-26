@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node ./src/index.ts --debug",
-    "build": "tsc",
+    "build": "tsc && cp -r ogg dist/src",
     "test": "jest",
     "download-ogg": "ts-node audio-download/index.ts"
   },

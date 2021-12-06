@@ -7,9 +7,12 @@ const pickRandom = (arr) => {
     return arr[Math.floor(Math.random() * arr.length)];
 }
 const playOgg = (name) => {
-    return new Promise<void>(resolve => player.play(`ogg/${name}`, {
+    return new Promise<void>((resolve, reject) => player.play(`ogg/${name}`, {
         mplayer: ['-softvol', '-volume', '5'],
-    }, () => resolve()));
+    }, (err) => {
+        if (err) reject(err);
+        resolve();
+    }));
 }
 
 export class VoiceService {

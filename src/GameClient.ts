@@ -1,8 +1,12 @@
 import { BehaviorSubject, Observable } from 'rxjs';
 import { Player } from './Player';
 import { GameEvent, MappedEvent, FirstBloodEvent, AceEvent, KillType, KillEvent, MultiKillEvent } from './Events';
-import fetch from 'node-fetch';
+import nodeFetch, { RequestInfo, RequestInit } from 'node-fetch';
 import { mainLogger, gameEventLogger } from './Loggers';
+
+function fetch(url: RequestInfo, init?: RequestInit): Promise<any> {
+    return nodeFetch(url, init);
+}
 
 const delayPromise = ms => new Promise<void>(resolve => setTimeout(() => resolve(), ms))
 export class GameClient {
@@ -197,7 +201,7 @@ export class GameClient {
     }
 
     async fetchActiveSummonerName(): Promise<string> {
-        return fetch('https://127.0.0.1:2999/liveclientdata/activeplayername', {}).then(res => res.json());
+        return fetch('https://127.0.0.1:2999/liveclientdata/activeplayername', {}).then(res => res.json().then(res => res));
     }
 
     async fetchMapName(): Promise<string> {
